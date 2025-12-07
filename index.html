@@ -345,35 +345,47 @@
 
       <!-- Simple contact form (Formspree/Netlify) -->
       <form class="contact-form" action="https://formspree.io/f/xjknebwb" method="POST">
-        <div class="field">
-          <label for="name">Name *</label>
-          <input type="text" id="name" name="name" required />
-        </div>
+  
+  <div class="field">
+    <label for="name">Name *</label>
+    <input type="text" id="name" name="name" required />
+  </div>
 
-        <div class="field">
-          <label for="email">Email *</label>
-          <input type="email" id="email" name="email" required />
-        </div>
+  <div class="field">
+    <label for="email">Email *</label>
+    <input type="email" id="email" name="email" required />
+  </div>
 
-        <div class="field">
-          <label for="project-type">Project Type</label>
-          <select id="project-type" name="project-type">
-            <option>Ad / Commercial</option>
-            <option>Social Media Content</option>
-            <option>Music Video</option>
-            <option>Short Film</option>
-            <option>Other</option>
-          </select>
-        </div>
+  <div class="field">
+    <label for="project-type">Project Type</label>
+    <select id="project-type" name="project-type">
+      <option>Ad / Commercial</option>
+      <option>Social Media Content</option>
+      <option>Music Video</option>
+      <option>Short Film</option>
+      <option>Other</option>
+    </select>
+  </div>
 
-        <div class="field">
-          <label for="message">Project Details *</label>
-          <textarea id="message" name="message" rows="4" required placeholder="Tell me about your project, deadlines and reference links."></textarea>
-        </div>
+  <div class="field">
+    <label for="message">Project Details *</label>
+    <textarea id="message" name="message" rows="4" required 
+      placeholder="Tell me about your project, deadlines and reference links."></textarea>
+  </div>
 
-        <button type="submit" class="btn primary full-width">Send Inquiry</button>
-        <p class="form-note">You’ll receive a reply within 24–48 hours.</p>
-      </form>
+  <!-- OPTIONAL BUT RECOMMENDED -->
+  <!-- Custom email subject in your inbox -->
+  <input type="hidden" name="_subject" value="New VFX Project Inquiry">
+
+  <!-- OPTIONAL -->
+  <!-- Redirect to a custom thank-you page -->
+  <!-- <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you.html"> -->
+
+  <button type="submit" class="btn primary full-width">Send Inquiry</button>
+  <p class="form-note">You’ll receive a reply within 24–48 hours.</p>
+
+</form>
+
     </div>
   </section>
 
@@ -391,4 +403,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
